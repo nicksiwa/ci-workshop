@@ -3,15 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "jest": {
-    "collectCoverage": true
-  },
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "coveralls": "^3.0.2",
     "jest": "^23.6.0"
   }
 }
